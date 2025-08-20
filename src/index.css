@@ -1,0 +1,389 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional Task Management Design System - Enhanced */
+
+@layer base {
+  :root {
+    /* Light Mode - Professional Blue/Purple Palette */
+    --background: 240 10% 98%;
+    --background-pattern: 240 10% 96%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --card-secondary: 240 6% 98%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Primary - Professional Blue */
+    --primary: 225 71% 47%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 225 71% 42%;
+    --primary-light: 225 100% 97%;
+    --primary-dark: 225 71% 35%;
+
+    /* Secondary - Soft Purple */
+    --secondary: 250 46% 50%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 250 100% 97%;
+    --secondary-dark: 250 46% 40%;
+
+    /* Accent - Success Green */
+    --accent: 142 71% 45%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 142 76% 96%;
+    --accent-dark: 142 71% 35%;
+
+    /* Status Colors */
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --warning-light: 38 100% 97%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --destructive-light: 0 100% 97%;
+
+    /* Neutral Palette */
+    --muted: 220 13% 96%;
+    --muted-foreground: 220 9% 46%;
+    --muted-dark: 220 13% 91%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 225 71% 47%;
+
+    /* Enhanced Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(225 71% 47%) 0%, hsl(250 46% 50%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(220 13% 98%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(225 100% 97%) 0%, hsl(250 100% 97%) 100%);
+    --gradient-background: radial-gradient(ellipse at top, hsl(225 100% 97%) 0%, hsl(240 10% 98%) 50%, hsl(250 100% 97%) 100%);
+    --gradient-completion: linear-gradient(45deg, hsl(142 71% 45%) 0%, hsl(142 71% 55%) 100%);
+
+    /* Professional Shadows */
+    --shadow-card: 0 2px 8px -2px hsl(225 71% 47% / 0.08);
+    --shadow-card-hover: 0 8px 32px -8px hsl(225 71% 47% / 0.15);
+    --shadow-button: 0 2px 4px -1px hsl(225 71% 47% / 0.2);
+    --shadow-completion: 0 0 20px hsl(142 71% 45% / 0.3);
+
+    /* Animation Variables */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --transition-elastic: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark Mode - Enhanced Professional Palette */
+    --background: 222 47% 8%;
+    --background-pattern: 222 47% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    --card-secondary: 222 47% 13%;
+
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Primary - Bright Blue for Dark Mode */
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 11%;
+    --primary-hover: 217 91% 65%;
+    --primary-light: 217 91% 15%;
+    --primary-dark: 217 91% 50%;
+
+    /* Secondary - Purple Adjusted */
+    --secondary: 263 50% 65%;
+    --secondary-foreground: 222 47% 11%;
+    --secondary-light: 263 50% 15%;
+    --secondary-dark: 263 50% 55%;
+
+    /* Accent - Success Green for Dark */
+    --accent: 142 76% 55%;
+    --accent-foreground: 222 47% 11%;
+    --accent-light: 142 76% 15%;
+    --accent-dark: 142 76% 45%;
+
+    /* Status Colors - Dark Mode */
+    --warning: 38 92% 60%;
+    --warning-foreground: 222 47% 11%;
+    --warning-light: 38 92% 15%;
+
+    --destructive: 0 84% 65%;
+    --destructive-foreground: 222 47% 11%;
+    --destructive-light: 0 84% 15%;
+
+    /* Neutral Palette - Dark */
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 65%;
+    --muted-dark: 217 32% 13%;
+
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 217 91% 60%;
+
+    /* Dark Mode Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(263 50% 65%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(222 47% 11%) 0%, hsl(222 47% 13%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(217 91% 15%) 0%, hsl(263 50% 15%) 100%);
+    --gradient-background: radial-gradient(ellipse at top, hsl(217 91% 15%) 0%, hsl(222 47% 8%) 50%, hsl(263 50% 15%) 100%);
+    --gradient-completion: linear-gradient(45deg, hsl(142 76% 55%) 0%, hsl(142 76% 65%) 100%);
+
+    /* Dark Mode Shadows - More Subtle */
+    --shadow-card: 0 2px 8px -2px hsl(0 0% 0% / 0.3);
+    --shadow-card-hover: 0 8px 32px -8px hsl(217 91% 60% / 0.15);
+    --shadow-button: 0 2px 4px -1px hsl(217 91% 60% / 0.3);
+    --shadow-completion: 0 0 20px hsl(142 76% 55% / 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans;
+    background: var(--gradient-background);
+    color: hsl(var(--foreground));
+    min-height: 100vh;
+  }
+
+  /* Dynamic Background Pattern */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      radial-gradient(circle at 25% 25%, hsl(var(--primary) / 0.03) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, hsl(var(--secondary) / 0.03) 0%, transparent 50%),
+      linear-gradient(45deg, transparent 40%, hsl(var(--accent) / 0.01) 50%, transparent 60%);
+    z-index: -1;
+    animation: backgroundShift 30s ease-in-out infinite;
+  }
+
+  @keyframes backgroundShift {
+    0%, 100% { 
+      transform: translate(0, 0) rotate(0deg); 
+      opacity: 1;
+    }
+    33% { 
+      transform: translate(-10px, -10px) rotate(1deg); 
+      opacity: 0.8;
+    }
+    66% { 
+      transform: translate(10px, -5px) rotate(-1deg); 
+      opacity: 0.9;
+    }
+  }
+}
+
+@layer utilities {
+  /* Enhanced Card Effects */
+  .card-gradient {
+    background: var(--gradient-card);
+    box-shadow: var(--shadow-card);
+    transition: var(--transition-smooth);
+    backdrop-filter: blur(8px);
+    border: 1px solid hsl(var(--border) / 0.5);
+  }
+
+  .card-gradient:hover {
+    box-shadow: var(--shadow-card-hover);
+    transform: translateY(-2px);
+    border-color: hsl(var(--primary) / 0.2);
+  }
+
+  /* Enhanced Button Effects */
+  .btn-gradient {
+    background: var(--gradient-primary);
+    box-shadow: var(--shadow-button);
+    transition: var(--transition-smooth);
+    border: 1px solid hsl(var(--primary) / 0.3);
+  }
+
+  .btn-gradient:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-card-hover);
+    filter: brightness(1.05);
+  }
+
+  /* Enhanced Hero Background */
+  .hero-gradient {
+    background: var(--gradient-hero);
+    border: 1px solid hsl(var(--border) / 0.3);
+    backdrop-filter: blur(8px);
+  }
+
+  /* Professional Transitions */
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+
+  .transition-elastic {
+    transition: var(--transition-elastic);
+  }
+
+  /* Enhanced Task Priority Colors */
+  .priority-high {
+    @apply bg-destructive-light text-destructive border border-destructive/30;
+    backdrop-filter: blur(4px);
+  }
+
+  .priority-medium {
+    @apply bg-warning-light text-warning border border-warning/30;
+    backdrop-filter: blur(4px);
+  }
+
+  .priority-low {
+    @apply bg-accent-light text-accent border border-accent/30;
+    backdrop-filter: blur(4px);
+  }
+
+  /* Completion Animation Classes */
+  .completion-celebrate {
+    animation: completionCelebration 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .completion-ripple {
+    animation: completionRipple 0.6s ease-out;
+  }
+
+  .completion-glow {
+    box-shadow: var(--shadow-completion);
+    animation: completionGlow 0.4s ease-out;
+  }
+
+  @keyframes completionCelebration {
+    0% { transform: scale(1) rotate(0deg); }
+    25% { transform: scale(1.1) rotate(-5deg); }
+    50% { transform: scale(1.15) rotate(5deg); }
+    75% { transform: scale(1.05) rotate(-2deg); }
+    100% { transform: scale(1) rotate(0deg); }
+  }
+
+  @keyframes completionRipple {
+    0% { 
+      transform: scale(1);
+      box-shadow: 0 0 0 0 hsl(var(--accent) / 0.4);
+    }
+    50% { 
+      transform: scale(1.02);
+      box-shadow: 0 0 0 10px hsl(var(--accent) / 0.2);
+    }
+    100% { 
+      transform: scale(1);
+      box-shadow: 0 0 0 20px hsl(var(--accent) / 0);
+    }
+  }
+
+  @keyframes completionGlow {
+    0% { filter: brightness(1) saturate(1); }
+    50% { filter: brightness(1.2) saturate(1.3); }
+    100% { filter: brightness(1) saturate(1); }
+  }
+
+  /* Image Container Styles */
+  .task-image {
+    @apply rounded-lg overflow-hidden border border-border/50;
+    backdrop-filter: blur(4px);
+    transition: var(--transition-smooth);
+  }
+
+  .task-image:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-card);
+  }
+
+  /* Glass Morphism Effect */
+  .glass-morphism {
+    background: hsl(var(--card) / 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid hsl(var(--border) / 0.3);
+  }
+
+  /* Professional Scrollbar */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+    border-radius: 3px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground) / 0.3);
+    border-radius: 3px;
+    transition: var(--transition-smooth);
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.5);
+  }
+}
