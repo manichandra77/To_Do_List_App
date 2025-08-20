@@ -4,6 +4,14 @@ A beautiful, modern, and professional task management application built with Rea
 
 ![TaskFlow Pro](https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=1200&h=600&fit=crop&crop=edges)
 
+## 🖼️ Screenshots
+
+<img width="1920" height="1080" alt="Screenshot (174)" src="https://github.com/user-attachments/assets/43bdd506-9dcf-4aa8-a2f1-523b32b26e09" />
+<img width="1920" height="1080" alt="Screenshot (175)" src="https://github.com/user-attachments/assets/56178b08-e1aa-47b1-a2ab-b59156f16d99" />
+<img width="1920" height="1080" alt="Screenshot (176)" src="https://github.com/user-attachments/assets/98ec0e55-e12f-4f57-8e77-44e8073fb596" />
+<img width="1920" height="1080" alt="Screenshot (177)" src="https://github.com/user-attachments/assets/c87cc006-ac5b-4ca4-823c-c1344fe1545c" />
+<img width="1920" height="1080" alt="Screenshot (178)" src="https://github.com/user-attachments/assets/d4951d5e-bb9f-49fd-b562-e7fab1b63913" />
+
 ## ✨ Features
 
 ### 🎯 Core Functionality
@@ -225,17 +233,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Tailwind CSS** for the utility-first CSS framework
 - **React Team** for the amazing framework
 - **Vite** for the lightning-fast build tool
-
-## 📞 Support
-
-For questions, feature requests, or bug reports:
-
-1. Check the [Issues](../../issues) page for existing discussions
-2. Create a new issue with detailed information
-3. Follow the issue templates for better assistance
-
----
-
-**Built with ❤️ using modern web technologies**
-
-*TaskFlow Pro - Where productivity meets beautiful design*
