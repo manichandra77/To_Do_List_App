@@ -57,7 +57,7 @@ A beautiful, modern, and professional task management application built with Rea
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repository-url>
+   git clone https://github.com/manichandra77/To_Do_List_App
    cd taskflow-pro
    ```
 
